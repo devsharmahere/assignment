@@ -5,10 +5,13 @@ int main(){
     printf("enter two numbers:");
     scanf("%d%d",&a,&b);
     if (a>b){
-        printf("the greater number is  %d \n",a);
+        printf(" %d is greater then  %d \n",a, b);
+    }
+    else if(a == b) {
+        printf("%d is equal to %d", a, b);
     }
     else {
-        printf("the greater number is %d \n ",b);
+        printf("%d is greater then %d \n ",b, a);
     }
 
     
