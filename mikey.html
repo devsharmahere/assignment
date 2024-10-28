@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sano Manjiro - Tokyo Revengers</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        /* Background Section */
+        #background {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #background p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox styling */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        #lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sano Manjiro (Mikey)</h1>
+        <p>The Invincible Mikey - Tokyo Revengers</p>
+    </header>
+
+    <!-- Background Section -->
+    <section id="background">
+        <h2>Background</h2>
+        <p>
+            Sano Manjiro, also known as Mikey, is a central character in the anime and manga series "Tokyo Revengers."
+            Known as "The Invincible Mikey," he is the fearless leader of the Tokyo Manji Gang. With a complex
+            personality, he balances a fierce loyalty to his friends with a mysterious, often dark side.
+        </p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <img src="image1.jpg" alt="Mikey Image 1" onclick="openLightbox('image1.jpg')">
+        <img src="image2.jpg" alt="Mikey Image 2" onclick="openLightbox('image2.jpg')">
+        <img src="image3.jpg" alt="Mikey Image 3" onclick="openLightbox('image3.jpg')">
+        <img src="image4.jpg" alt="Mikey Image 4" onclick="openLightbox('image4.jpg')">
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img src="" alt="Lightbox Image" id="lightbox-img">
+    </div>
+
+    <!-- JavaScript for Lightbox Effect -->
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
