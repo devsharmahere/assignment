@@ -1,0 +1,228 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+#main{
+    height: 100%;
+    width: 100%; 
+
+}
+#head{
+    height: 15%;
+    width: 100%;
+    background-color:white; 
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+#fake{
+    height: 15%;
+    width: 100%;
+}
+#logo{
+    height: 70%;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.text{
+    color: black;
+    display: flex;
+}
+#donate{
+    background-color: rgb(255, 0, 51);
+    color: white;
+    font-weight: 800;
+    padding: 15px;
+    border-radius: 50px;
+}
+#donate:hover{
+    background-color:crimson;
+}
+#login{
+    border-style: solid;
+    padding: 10px;
+}
+#page1{
+    height: 85%;
+    width: 100%; 
+}
+#float{
+    height: 85%;
+    width: 100%;
+    background-color: aqua;
+}
+#strip1{
+    height:7% ;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+#strip2{
+    height:5% ;
+    width: 100%;
+    text-align: center;
+}
+#page2{
+    height: 100%;
+    width: 100%; 
+}
+#box1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+#card1{
+    background-color: yellow;
+    width: 33%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 2%;
+
+    
+}
+#card2{
+    background-color: hotpink;
+    width: 34%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-right: 2%;
+}
+#card3{
+    background-color: crimson;
+    width: 35%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#box2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+#card4{
+    background-color: orange;
+    width: 33%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+#card5{
+    background-color: blue;
+    width: 34%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 1%;
+    margin-right: 2%;
+
+    
+}
+#card6{
+    background-color: red;
+    width: 35%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 1%;
+    
+}
+
+
+
+#page3{
+    height: 100%;
+    width: 100%; 
+
+}
+#help{
+    height: 30%;
+    width: 100%;
+    background-color: aqua;
+    
+
+}
+#buttons{
+    display: flex;
+
+}
+#button1{
+    color: aliceblue;
+    padding: 10px;
+    margin-right: 4%;
+    border-radius: 50px;
+    background-color: red;
+    margin-top: 1%;
+
+}
+#button1:hover{
+    background-color: crimson;
+    
+
+}
+#button2{
+    margin-top: 1%;
+    border-radius: 50px;
+    padding: 10px; 
+    background-color: aliceblue;
+}
+
+
+
+@media (max-width: 768px) {
+    #head {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    #logo {
+        height: 50px;
+        max-width: 120px;
+    }
+
+    .text {
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+
+    #donate {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #login {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #page1 {
+        height: auto;
+        padding: 20px;
+    }
+
+    #float {
+        height: 60vh;
+        width: 90%;
+    }
+
+    #strip1 {
+        font-size: 20px;
+    }
+
+    #strip2 {
+        font-size: 16px;
+    }
+}
